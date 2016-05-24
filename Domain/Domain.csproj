@@ -50,19 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBaseContext.cs" />
-    <Compile Include="IExtensionRepository.cs" />
-    <Compile Include="IOrderable.cs" />
-    <Compile Include="IOrderableRepository.cs" />
-    <Compile Include="IRepository.cs" />
-    <Compile Include="ISpecificationRepository.cs" />
-    <Compile Include="ISpecification.cs" />
-    <Compile Include="IUnitOfWork.cs" />
-    <Compile Include="Orderable.cs" />
+    <Compile Include="DbContext\DataBaseContext.cs" />
+    <Compile Include="Repository\IExtensionRepository.cs" />
+    <Compile Include="OrderableRepository\IOrderable.cs" />
+    <Compile Include="OrderableRepository\IOrderableRepository.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="SpecificationRepository\ISpecificationRepository.cs" />
+    <Compile Include="SpecificationRepository\ISpecification.cs" />
+    <Compile Include="Repository\IUnitOfWork.cs" />
+    <Compile Include="Model\Orderable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository.cs" />
-    <Compile Include="Specification.cs" />
-    <Compile Include="SpecificationExtensions.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="SpecificationRepository\Specification.cs" />
+    <Compile Include="SpecificationRepository\SpecificationExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />

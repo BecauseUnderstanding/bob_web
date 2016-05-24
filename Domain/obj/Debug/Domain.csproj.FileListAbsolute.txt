@@ -1,1 +1,14 @@
 E:\OneDrive\项目\webMvc\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\Domain.dll.config
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\Domain.dll
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\Domain.pdb
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\Common.dll
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\EntityFramework.dll
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\Common.pdb
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\EntityFramework.xml
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\GitHub\webMvc\Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Documents\GitHub\webMvc\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\webMvc\Domain\obj\Debug\Domain.dll
+D:\Documents\GitHub\webMvc\Domain\obj\Debug\Domain.pdb

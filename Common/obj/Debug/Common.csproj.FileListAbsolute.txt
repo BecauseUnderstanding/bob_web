@@ -3,3 +3,8 @@ E:\OneDrive\项目\webMvc\Common\bin\Debug\Common.pdb
 E:\OneDrive\项目\webMvc\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 E:\OneDrive\项目\webMvc\Common\obj\Debug\Common.dll
 E:\OneDrive\项目\webMvc\Common\obj\Debug\Common.pdb
+D:\Documents\GitHub\webMvc\Common\bin\Debug\Common.dll
+D:\Documents\GitHub\webMvc\Common\bin\Debug\Common.pdb
+D:\Documents\GitHub\webMvc\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\webMvc\Common\obj\Debug\Common.dll
+D:\Documents\GitHub\webMvc\Common\obj\Debug\Common.pdb
