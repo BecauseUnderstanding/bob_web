@@ -29,7 +29,7 @@ namespace Domain
         /// <param name="orderby"></param>
         /// <param name="specification"></param>
         /// <returns></returns>
-        IQueryable<TEntity> GetModel(IOrderable<TEntity> orderby, ISpecification<TEntity> specification);
+        IQueryable<TEntity> GetModel(Action<IOrderable<TEntity>> orderby, ISpecification<TEntity> specification);
 
         ///// <summary>
         ///// 保存之后执行
