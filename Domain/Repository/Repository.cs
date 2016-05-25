@@ -12,6 +12,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using Common.Enum;
+using ESBasic.Loggers;
 
 namespace Domain
 {
@@ -27,11 +28,12 @@ namespace Domain
     /// <typeparam name="TEntity"></typeparam>
     public class Repository<TEntity> : ISpecificationRepository<TEntity> where TEntity : class
     {
-        public Repository(IUnitOfWork db, Action<string> logger)
+        
+        public Repository(IUnitOfWork db,FileAgileLogger logger)
         {
             UnitOfWork = db;
             Db = (DataBaseContext)db;
-            Logger = logger;
+            FileAgileLogger = logger;
             ((IObjectContextAdapter)db).ObjectContext.CommandTimeout = 0;
         }
 
@@ -50,9 +52,10 @@ namespace Domain
         /// </summary>
         protected IUnitOfWork UnitOfWork { get; set; }
         /// <summary>
-        /// Action委托事件，在派生类中操作它
+        /// 日志记录
         /// </summary>
-        protected Action<string> Logger { get; private set; }
+        protected FileAgileLogger FileAgileLogger { get; set; }
+
 
         #endregion
 
@@ -218,9 +221,9 @@ namespace Domain
             {
                 Db.Set<T>().Attach(newTEntity);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
+                FileAgileLogger.Log(e, null, ErrorLevel.Standard);
                 throw new Exception("本方法不能和GetModel()一起使用，请使用Update(TEntity entity)");
             }
             Db.Configuration.ValidateOnSaveEnabled = false;
@@ -233,6 +236,7 @@ namespace Domain
             }
             catch (OptimisticConcurrencyException e)
             {
+                FileAgileLogger.Log(e,null,ErrorLevel.Standard);
                 ((IObjectContextAdapter)Db).ObjectContext.Refresh(RefreshMode.ClientWins, newTEntity);
                 SaveChanges();
             }
