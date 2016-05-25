@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "应用服务", "应用服�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "应用类型", "应用类型", "{5E76B034-5579-4D2D-9243-55063BF98616}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{5B26E736-0611-46E9-8C50-C259945F854F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "Domain\EntityFramework.csproj", "{5B26E736-0611-46E9-8C50-C259945F854F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{9FCED712-4BEB-4027-B981-7F6610EB920B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{3D92185C-2172-444D-A982-A7A9FAF5105C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Common\Core.csproj", "{3D92185C-2172-444D-A982-A7A9FAF5105C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "web\web.csproj", "{AD64620B-6E22-4A58-9EFE-5F60EF8FBD36}"
 EndProject
