@@ -292,7 +292,7 @@ namespace Domain
             try
             {
                 this.SaveChanges();
-            }
+            } 
             catch (OptimisticConcurrencyException ex)//并发冲突异常
             {
                 ((IObjectContextAdapter)Db).ObjectContext.Refresh(RefreshMode.ClientWins, item);

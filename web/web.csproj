@@ -251,6 +251,9 @@
     <Content Include="Global.asax" />
     <Content Include="Areas\Common\Views\Web.config" />
     <Content Include="Areas\Basic\Views\Web.config" />
+    <Content Include="Config\log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
