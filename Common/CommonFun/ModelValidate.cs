@@ -280,6 +280,23 @@ namespace Common.CommonFun
 
         #endregion
 
+        #region 特殊符号验证
+
+        public static bool CheckSymbol(this string strMessage, string errorMessage, StringBuilder outMessage)
+        {
+            var res = strMessage.CheckSymbol();
+            if (!res)
+                AppendWithEnter(errorMessage, outMessage);
+            return res;
+        }
+
+        public static bool CheckSymbol(this string strMessage)
+        {
+            return System.Text.RegularExpressions.Regex.IsMatch(strMessage, @"[`~%!@#^=''?~！@#￥……&——‘”“'？*()（），,。.、]");
+        }
+
+        #endregion
+
         #endregion
 
 
