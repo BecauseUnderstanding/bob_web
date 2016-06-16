@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\SoaDataPage.cs" />
     <Compile Include="Enum\SqlType.cs" />
     <Compile Include="Log\BaseLog.cs" />
+    <Compile Include="Log\ILog.cs" />
     <Compile Include="Log\LogEntity.cs" />
     <Compile Include="Log\LogLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
