@@ -30,24 +30,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ESBasic">
-      <HintPath>E:\OneDrive\项目\类库\ESBasic.dll</HintPath>
+    <Reference Include="Aspose.Cells">
+      <HintPath>E:\OneDrive\项目\类库\Aspose.Cells.dll\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data">
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonFun\ExcelHelper.cs" />
+    <Compile Include="CommonFun\FileHelper.cs" />
     <Compile Include="CommonFun\ModelValidate.cs" />
     <Compile Include="Common\SoaDataPage.cs" />
+    <Compile Include="Enum\DownloadOption.cs" />
     <Compile Include="Enum\SqlType.cs" />
     <Compile Include="Log\BaseLog.cs" />
     <Compile Include="Log\ILog.cs" />
