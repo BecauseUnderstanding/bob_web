@@ -44,9 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonFun\EnumExtend.cs" />
     <Compile Include="CommonFun\ExcelHelper.cs" />
     <Compile Include="CommonFun\FileHelper.cs" />
     <Compile Include="CommonFun\ModelValidate.cs" />
+    <Compile Include="CommonFun\VerificationConstantDefine.cs" />
+    <Compile Include="Common\SelectedTree.cs" />
     <Compile Include="Common\SoaDataPage.cs" />
     <Compile Include="Enum\DownloadOption.cs" />
     <Compile Include="Enum\SqlType.cs" />
